@@ -21,3 +21,22 @@ def init_app(app):
     def admin():
         cookies = Yup.query.all()
         return render_template('admin.html', cookies=cookies)
+    
+    @app.route('/edit/<int:id>', methods=['GET','POST'])
+    def edit(id):
+        cookie =  Yup.query.get(id)
+        if request.method == 'POST':
+            cookie.nome = request.form['nome']
+            cookie.descricao = request.form['descricao']
+            cookie.preco = request.form['preco']
+            cookie.imagem = request.form['imagem']
+            db.session.commit()
+            return redirect(url_for('admin'))
+        return render_template('edit.html',cookie=cookie)
+
+    @app.route('/delete/<int:id>')
+    def delete(id):
+        cookie = Yup.query.get(id)
+        db.session.delete(cookie)
+        db.session.commit()
+        return redirect(url_for('admin'))
