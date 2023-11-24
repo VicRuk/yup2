@@ -1,0 +1,95 @@
+html, body{
+    font-family: 'Karla', sans-serif;
+}
+h1{
+    word-wrap: break-word; 
+    max-width: 100%;
+    font-weight: 800;
+}
+h6{
+    font-size: 20px;
+}
+p{
+    font-size: 0.8rem;
+    word-wrap: break-word; 
+    max-width: 100%;
+}
+#backheader{
+    position: absolute;
+    top: 50px;
+    right: 25px;
+    font-size: 40px;
+}
+.input-box input{
+    height: 50px;
+    border-radius: 20px;
+    padding-left: 55px;
+}
+.input-box i {
+    position: absolute;
+    left: 20px;
+    top:13px;
+    font-size: 23px;
+    color:#000;  
+}
+#card{
+    min-height: 160px;
+    border-radius: 40px;
+}
+.card-corpo a, .card-title p{
+    word-wrap: break-word; 
+    max-width: 100%;
+}
+.card-image{
+    object-fit: cover;
+}
+#home{
+    min-height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+#cookies h1{
+    font-size: 35px;
+}
+#cookies h2{
+    word-wrap: break-word; 
+    max-width: 100%;
+    font-weight: 800;
+    font-size: 20px;
+}
+.forms input, select{
+    height: 55px;
+    border-radius: 10px;
+}
+.custom-file-label {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+}
+#footer{
+    background-color: #EFEFEF;
+    bottom: 0;
+}
+#painel h1{
+    font-weight: 800;
+    font-size: 35px;
+}
+#copyright{
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+}
+.circle{
+    position: fixed;
+    background-color: #5BB944;
+    border-radius: 10px;
+    width: 55px;
+    height: 55px;
+    bottom: 40px;
+    right: 20px;
+}
+.circle i{
+    font-size: 35px;
+}
